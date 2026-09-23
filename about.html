@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Opera à la Carte San Diego</title>
+<meta name="description" content="Opera À la Carte San Diego's mission: opportunities for performers, accessible opera for the community, artistic excellence.">
+<link rel="canonical" href="https://jasongornall.github.io/opera-a-la-carte/about.html">
+<meta property="og:title" content="About — Opera à la Carte San Diego">
+<meta property="og:description" content="Opera-tunity and connection: our mission, vision, and values.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2312100d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23c9a227' text-anchor='middle' font-style='italic'%3EO%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav id="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html">Opera <em>à la Carte</em> <span>San Diego</span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active" aria-current="page">About</a></li>
+    <li><a href="productions.html">Productions</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="leadership.html">Leadership</a></li>
+    <li><a href="auditions.html">Auditions</a></li>
+    <li><a href="press.html">Press</a></li>
+    <li><a href="giving.html">Giving</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<main id="main">
+<div class="page-hero">
+  <p class="section-label">Who We Are</p>
+  <h1>About <em>Opera à la Carte</em></h1>
+  <p>Opera-tunity · Connection</p>
+</div>
+
+<section aria-labelledby="mission-heading">
+  <div class="wrap narrow prose">
+    <p class="section-label reveal">Our Mission</p>
+    <h2 class="section-title reveal" id="mission-heading">Why We Sing</h2>
+    <p class="reveal"><strong>Opera À la Carte, San Diego's mission is to provide opportunities for performers to showcase their talent</strong> as a commitment to promoting the performing arts and classical music in the greater San Diego area. <strong>O.A.C. strives to captivate our audience with engaging and accessible performances</strong> with the hope of creating new opera lovers. We want everyone to have the opportunity to experience the beauty and magic of opera and classical singing. We will enrich and educate our community through storytelling, outreach and by aspiring to artistic excellence.</p>
+  </div>
+</section>
+
+<section style="background:var(--ink-soft)" aria-labelledby="values-heading">
+  <div class="wrap">
+    <p class="section-label reveal">What Guides Us</p>
+    <h2 class="section-title reveal" id="values-heading">Our Values</h2>
+    <div class="cards">
+      <article class="card reveal"><div class="card-body"><h3>Excellence</h3><p>Artistic excellence and high quality performances in everything we stage.</p></div></article>
+      <article class="card reveal"><div class="card-body"><h3>Community</h3><p>Engagement with our local community — opera belongs to everyone.</p></div></article>
+      <article class="card reveal"><div class="card-body"><h3>Collaboration</h3><p>Partnering and collaborating with venues and artist organizations across San Diego.</p></div></article>
+      <article class="card reveal"><div class="card-body"><h3>Relevance</h3><p>Keeping opera and classical singing current for today's audiences.</p></div></article>
+      <article class="card reveal"><div class="card-body"><h3>Access</h3><p>Growing a broader, more diverse audience — new opera lovers welcome.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="vision-heading">
+  <div class="wrap narrow prose">
+    <p class="section-label reveal">Our Vision</p>
+    <h2 class="section-title reveal" id="vision-heading">Looking Ahead</h2>
+    <p class="reveal">Our vision is to produce shows of artistic excellence that have positive impact on our community. We endeavor to educate, to entertain and to demystify opera and classical singing. We strive to sing for diverse audiences, as well as forge artistic collaborations that promote the arts throughout greater San Diego.</p>
+    <figure class="reveal mt-2">
+      <img src="https://images.squarespace-cdn.com/content/v1/653d35e259950608411b7131/40594446-e192-43dd-8677-8a4445d5dad8/IMG_2089.JPG" alt="Opera à la Carte company members on stage" loading="lazy" decoding="async" style="border-radius:14px; border:1px solid rgba(201,162,39,.25)">
+      <figcaption style="color:var(--cream-dim); font-size:.85rem; margin-top:.75rem; text-align:center"><em>“Those who wish to sing, always find a song.”</em><br>From left to right: Shelby, Abla, Adam, Maria, Michele, Kaitlin and Joshua</figcaption>
+    </figure>
+  </div>
+</section>
+</main>
+<footer>
+  <p class="serif">Opera à la Carte San Diego</p>
+  <p><em>Opera à la Carte is a registered 501(c)(3) organization.</em></p>
+  <p class="footer-note">Preview concept — official site: <a href="https://www.operaalacartesandiego.com/" target="_blank" rel="noopener">operaalacartesandiego.com</a></p>
+</footer>
+<script>
+  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('site-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+</script>
+</body>
+</html>
