@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giving — Opera à la Carte San Diego</title>
+<meta name="description" content="Donate to Opera à la Carte San Diego, a registered 501(c)(3). Help us bring art to life via Zelle, PayPal, or check.">
+<link rel="canonical" href="https://jasongornall.github.io/opera-a-la-carte/giving.html">
+<meta property="og:title" content="Giving — Opera à la Carte San Diego">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2312100d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23c9a227' text-anchor='middle' font-style='italic'%3EO%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav id="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html">Opera <em>à la Carte</em> <span>San Diego</span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="productions.html">Productions</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="leadership.html">Leadership</a></li>
+    <li><a href="auditions.html">Auditions</a></li>
+    <li><a href="press.html">Press</a></li>
+    <li><a href="giving.html" class="active" aria-current="page">Giving</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<main id="main">
+<div class="page-hero">
+  <p class="section-label">Donate</p>
+  <h1>Help Us Bring <em>Art to Life</em></h1>
+  <p>No donation is too small — we appreciate your support.</p>
+</div>
+<section>
+  <div class="wrap">
+    <p class="section-label reveal">How Donations Help</p>
+    <div class="cards">
+      <article class="card reveal"><div class="card-body"><h3>Productions</h3><p>Donations help pay for the costs of staging operas, including sets, costumes, and performances by artists.</p></div></article>
+      <article class="card reveal"><div class="card-body"><h3>Community</h3><p>Donations help fund free public performances and other community events.</p></div></article>
+      <article class="card reveal"><div class="card-body"><h3>Artists</h3><p>Donations help fund programs that train and inspire future opera artists.</p></div></article>
+      <article class="card reveal"><div class="card-body"><h3>Audiences</h3><p>Donations help build an audience for future productions.</p></div></article>
+    </div>
+
+    <h2 class="section-title reveal mt-2">Donate Today</h2>
+    <div class="qr-row">
+      <div class="qr-card reveal">
+        <img src="https://images.squarespace-cdn.com/content/v1/653d35e259950608411b7131/8920e3d2-724e-4fa3-ad0c-5250f51d189c/OAC+Zelle+QR" alt="Zelle QR code for donating to Opera à la Carte" loading="lazy" decoding="async">
+        <h4>Zelle</h4>
+        <p>Scan to donate instantly via Zelle.</p>
+      </div>
+      <div class="qr-card reveal">
+        <img src="https://images.squarespace-cdn.com/content/v1/653d35e259950608411b7131/0495baed-b88b-4d13-9080-7c71cac4545e/PAYPAL%2BOAC" alt="PayPal QR code for donating to Opera à la Carte" loading="lazy" decoding="async">
+        <h4>PayPal</h4>
+        <p>Scan to donate securely via PayPal.</p>
+      </div>
+    </div>
+
+    <div class="address-card reveal">
+      <p class="section-label">By Mail</p>
+      <p><strong style="color:var(--cream)">Mail a check to:</strong><br>
+      OPERA A la Carte San Diego<br>
+      1130 Whispering Water Dr.<br>
+      San Marcos, California 92078</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <p class="serif">Opera à la Carte San Diego</p>
+  <p><em>Opera à la Carte is a registered 501(c)(3) organization.</em></p>
+  <p class="footer-note">Preview concept — official site: <a href="https://www.operaalacartesandiego.com/" target="_blank" rel="noopener">operaalacartesandiego.com</a></p>
+</footer>
+<script>
+  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('site-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+</script>
+</body>
+</html>
