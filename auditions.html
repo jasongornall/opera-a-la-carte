@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auditions — Opera à la Carte San Diego</title>
+<meta name="description" content="Audition for Opera à la Carte San Diego. We seek singers of all voice types and are committed to equitable casting and local talent.">
+<link rel="canonical" href="https://jasongornall.github.io/opera-a-la-carte/auditions.html">
+<meta property="og:title" content="Auditions — Opera à la Carte San Diego">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2312100d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23c9a227' text-anchor='middle' font-style='italic'%3EO%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav id="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html">Opera <em>à la Carte</em> <span>San Diego</span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="productions.html">Productions</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="leadership.html">Leadership</a></li>
+    <li><a href="auditions.html" class="active" aria-current="page">Auditions</a></li>
+    <li><a href="press.html">Press</a></li>
+    <li><a href="giving.html">Giving</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<main id="main">
+<div class="page-hero">
+  <p class="section-label">Sing With Us</p>
+  <h1><em>Auditions</em></h1>
+  <p>We are committed to equitable casting and showcasing local talent.</p>
+</div>
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal prose">
+        <p class="section-label">Most Recent Audition Call</p>
+        <h2 class="section-title"><em style="font-style:italic">Viva la Mamma!</em></h2>
+        <p><strong>Auditions: Saturday, May 2 · 10:00 AM – 4:00 PM</strong><br>San Diego State University – School of Music, Room M208</p>
+        <p>Opera À la Carte San Diego accepted audition submissions for Donizetti's <em>Viva la Mamma</em> (or <em>Le convenienze ed inconvenienze teatrali</em>). We sought singers of all voice types for principal and supporting roles. This is a comedic opera, and we were especially interested in performers with strong acting skills, comic timing, and a willingness to engage in physical comedy and ensemble work.</p>
+        <p><strong>To apply:</strong> complete the audition form and upload your headshot and resume:</p>
+        <p><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScfeCZSY9jYHMtq3kjonof38lzisKqsZnRNT0wT0csmOzNA4g/viewform" target="_blank" rel="noopener">Open Audition Form</a></p>
+        <p><strong>Please prepare:</strong> 2–3 arias, including one in Italian (preferably Rossini, Donizetti, or Bellini) and one that highlights your acting ability. More details are included in the application.</p>
+        <p>Questions? <a href="mailto:operaalacartesandiego@gmail.com" style="color:var(--gold-soft)">Email us anytime.</a></p>
+      </div>
+      <img class="reveal" src="https://images.squarespace-cdn.com/content/v1/653d35e259950608411b7131/fe565264-e20e-4c5d-af73-046c5795508f/Vivalamammaaudition-OAC+2026.jpeg" alt="Viva la Mamma audition announcement" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+<section style="background:var(--ink-soft)">
+  <div class="wrap narrow text-center">
+    <h2 class="section-title reveal">Future Productions</h2>
+    <p class="lede reveal mb-2" style="margin-left:auto;margin-right:auto;">We hold auditions for each new production. To be notified of the next call, join our mailing list or send your headshot and resume to <a href="mailto:operaalacartesandiego@gmail.com" style="color:var(--gold-soft)">operaalacartesandiego@gmail.com</a>.</p>
+    <a class="btn ghost reveal" href="contact.html">Contact Us</a>
+  </div>
+</section>
+</main>
+<footer>
+  <p class="serif">Opera à la Carte San Diego</p>
+  <p><em>Opera à la Carte is a registered 501(c)(3) organization.</em></p>
+  <p class="footer-note">Preview concept — official site: <a href="https://www.operaalacartesandiego.com/" target="_blank" rel="noopener">operaalacartesandiego.com</a></p>
+</footer>
+<script>
+  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('site-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+</script>
+</body>
+</html>
